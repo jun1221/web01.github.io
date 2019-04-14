@@ -12,7 +12,7 @@
 
   <!-- custom css -->
   {% assign lvl = page.url | append:'X' | split:'/' | size %}
-  {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %
+  {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
   <link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
 
   <title>Hello, world!</title>
