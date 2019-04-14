@@ -11,9 +11,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- custom css -->
-  {% assign lvl = page.url | append:'X' | split:'/' | size %}
-  {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/custom.css">
+  <link rel="stylesheet" href="{{( site.url }}/css/custom.css">
 
   <title>Hello, world!</title>
 </head>
